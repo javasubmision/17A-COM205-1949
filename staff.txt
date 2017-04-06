@@ -1,0 +1,18 @@
+Seyi Falaye Male 17 September 1994 Science Science and Technology Baze University
+Seyi Falaye Male 17/September/1994 Science Computing and Applied Sciences Baze University
+ Male Day/Month/Year --Select Faculty-- --Select Department-- 
+ null Day/Month/Year --Select Faculty-- --Select Department-- 
+if(confirm == JFileChooser.APPROVE_OPTION)
+        {
+            File myPass = testChooser.getSelectedFile();
+            String filepath = myPass.toString();
+            new File("C://staff-pics").mkdir();
+            Path origin = Paths.get(filepath);
+            Path destination = Paths.get("C://staff-pics");
+            Path imageDir = destination.resolve(testChooser.getSelectedFile().getName());
+            try {
+                Files.copy(origin, imageDir, StandardCopyOption.REPLACE_EXISTING);
+            } catch (IOException ex) {
+                Logger.getLogger(quesFrame.class.getName()).log(Level.SEVERE, null, ex);
+            } null Day/Month/Year --Select Faculty-- --Select Department-- 
+ null Day/Month/Year --Select Faculty-- --Select Department-- 
